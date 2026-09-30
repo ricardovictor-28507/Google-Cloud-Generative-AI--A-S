@@ -1,0 +1,39 @@
+Template-to-EduGenie Mapping
+
+1. Brainstorming & Ideation
+- Define Problem Statements -> learner pain points addressed by EduGenie.
+- Brainstorming & Idea Prioritization -> selected five-workflow educational assistant.
+- Empathy Map -> beginner/self-learner persona.
+
+2. Requirement Analysis
+- Solution Requirements -> current API/workflow/security requirements.
+- Technology Stack -> actual Python/FastAPI/frontend/Gemini stack.
+- Customer Journey Map -> discover -> interact -> learn/practice flow.
+- Data Flow Diagram -> browser -> FastAPI -> feature module -> AIService -> Gemini.
+
+3. Project Design Phase
+- Problem-Solution Fit -> learning-friction problem and EduGenie response.
+- Proposed Solution -> actual project objective, scope, architecture and resources.
+- Solution Architecture -> actual source files and service boundaries.
+
+4. Project Planning Phase
+- Project Planning -> logical backlog for the actual modules and team responsibilities.
+
+5. Project Development Phase
+- Code-Layout -> actual modular source structure.
+- Coding & Solution -> actual languages, frameworks, features and source validation.
+- Functional Features -> actual implemented routes/modules.
+
+6. Project Testing
+- Performance Testing -> honest distinction between smoke validation and formal load testing.
+
+7. Project Documentation
+- Project Executable Files -> actual source, README, setup and limitations.
+- Sample Project Documentation -> EduGenie usage scenarios.
+
+8. Project Demonstration
+- Communication -> team coordination around the real project.
+- Demonstration of Proposed Features -> actual five workflows plus fallback.
+- Project Demo Planning -> demo responsibilities by member.
+- Team Involvement -> actual team roles.
+- Scalability & Future Plan -> realistic upgrades based on current limitations.

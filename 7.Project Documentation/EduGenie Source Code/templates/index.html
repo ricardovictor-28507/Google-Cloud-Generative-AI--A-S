@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduGenie | Focused learning workspace</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/">EDU<span>GENIE</span></a><div class="topbar-actions"><div class="status"><i></i>{{ 'AI companion ready' if live_ai else 'Offline study mode' }}</div><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode"><span class="theme-icon" aria-hidden="true">◐</span><span id="theme-label">Dark</span></button></div></header>
+  <main class="shell">
+    <section class="workspace">
+      <nav class="tabs" aria-label="Learning tools">
+        <button class="tab active" data-tool="qa">Ask</button><button class="tab" data-tool="explain">Explain</button><button class="tab" data-tool="summarize">Summarize</button><button class="tab" data-tool="quiz">Quiz</button><button class="tab" data-tool="learn">Learning path</button>
+      </nav>
+      <div class="tool-panel">
+        <div class="tool-copy"><p class="eyebrow" id="tool-kicker">CLARITY ON DEMAND</p><h2 id="tool-title">Ask a question</h2><p id="tool-description">Get a direct, learner-friendly answer to something you are studying.</p></div>
+        <form id="tool-form"><label id="input-label" for="prompt-input">Your question</label><textarea id="prompt-input" rows="5" required placeholder="Why is the sky blue?"></textarea><div class="form-footer"><span id="char-count">0 / 12000</span><button type="submit" id="submit-button">Get answer <span>-></span></button></div></form>
+        <div id="result" class="result" hidden><div class="result-label">RESPONSE</div><div id="result-body"></div></div>
+      </div>
+    </section>
+    </main>
+  <footer>EduGenie <span>study guide</span></footer>
+  <script src="{{ url_for('static', path='app.js') }}"></script>
+</body>
+</html>
